@@ -55,8 +55,15 @@ class Quote {
     }
 
     public function review(int $id, int $advisorId, float $quotedPrice, string $comments, string $status): bool {
-        $sql = "UPDATE cotizaciones SET asesor_id = ?, precio_cotizado = ?, comentarios_asesor = ?, estado = ?, fecha_respuesta = NOW() WHERE id = ?";
-        $stmt = $this->db->prepare($sql);
-        return $stmt->execute([$advisorId, $quotedPrice, $comments, $status, $id]);
-    }
+    $sql = "UPDATE cotizaciones 
+            SET asesor_id = ?, 
+                precio_cotizado = ?, 
+                comentarios_asesor = ?, 
+                estado = ?, 
+                fecha_respuesta = CURRENT_TIMESTAMP 
+            WHERE id = ?";
+
+    $stmt = $this->db->prepare($sql);
+    return $stmt->execute([$advisorId, $quotedPrice, $comments, $status, $id]);
+    }  
 }
