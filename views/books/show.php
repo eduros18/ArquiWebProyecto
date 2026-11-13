@@ -11,9 +11,9 @@
     <div class="card-body p-4 p-lg-5">
         <div class="row g-5">
             <!-- Portada y Formato -->
-            <div class="col-md-4 text-center">
+            <div class="detail-jacket col-md-4 text-center">
                 <div class="book-cover-large shadow rounded p-4 bg-light mb-3 d-flex align-items-center justify-content-center mx-auto" style="height: 340px; max-width: 250px;">
-                    <i class="bi bi-journal-text text-umes" style="font-size: 6rem;"></i>
+                    <span aria-hidden="true"><?= sanitize($book['titulo']) ?></span>
                 </div>
                 <span class="badge bg-umes px-3 py-2 fs-6 mb-2"><?= sanitize($book['formato']) ?></span>
                 <div>

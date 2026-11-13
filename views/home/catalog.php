@@ -1,6 +1,6 @@
 <?php require_once __DIR__ . '/../layout/header.php'; ?>
 
-<div class="row mb-4 align-items-center">
+<div class="catalog-heading row mb-4 align-items-center gy-3">
     <div class="col-md-6">
         <h2 class="fw-bold text-dark mb-0">Catálogo Bibliográfico</h2>
     </div>
@@ -8,7 +8,7 @@
         <!-- Buscador en tiempo real -->
         <div class="position-relative">
             <div class="input-group shadow-sm">
-                <input type="text" id="liveSearchInput" class="form-control" 
+                <input type="text" id="liveSearchInput" aria-label="Buscar por título, autor o ISBN" class="form-control" 
                        placeholder="Buscar por título, autor, ISBN..." autocomplete="off">
             </div>
             <div id="liveSearchResults" class="list-group position-absolute w-100 shadow mt-1 d-none z-3"></div>
@@ -96,7 +96,7 @@
                             <div class="position-relative p-3 text-center bg-transparent">
                                 <span class="position-absolute top-0 end-0 m-2 badge bg-secondary"><?= sanitize($b['formato']) ?></span>
                                 <div class="book-cover-placeholder d-flex align-items-center justify-content-center mx-auto shadow-sm">
-                                    <span class="text-muted small">Libro</span>
+                                    <span aria-hidden="true"><?= sanitize($b['titulo']) ?></span>
                                 </div>
                             </div>
                             <div class="card-body d-flex flex-column">

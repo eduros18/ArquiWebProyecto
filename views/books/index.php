@@ -2,8 +2,8 @@
 
 <div class="d-flex justify-content-between align-items-center mb-4">
     <div>
-        <h3 class="fw-bold text-dark mb-0">CRUD de Catálogo Bibliográfico (RF-05.1)</h3>
-        <p class="text-muted small mb-0">Mantenimiento de títulos, categorías, precios y eliminación lógica en la base de datos</p>
+        <h3 class="fw-bold text-dark mb-0">Gestión del catálogo</h3>
+        <p class="text-muted small mb-0">Administra títulos, categorías, precios y disponibilidad.</p>
     </div>
     <a href="index.php?c=book&a=create" class="btn btn-success fw-bold">
         Nuevo Libro

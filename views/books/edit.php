@@ -2,7 +2,7 @@
 
 <div class="mb-3">
     <a href="index.php?c=book&a=index" class="text-muted text-decoration-none small">
-        &larr; Volver al CRUD
+        &larr; Volver a la gestión del catálogo
     </a>
 </div>
 

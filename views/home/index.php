@@ -1,13 +1,13 @@
 <?php require_once __DIR__ . '/../layout/header.php'; ?>
 
 <!-- Hero Promocional -->
-<div class="p-5 mb-4 rounded-3 hero-banner text-white shadow">
-    <div class="container-fluid py-4">
-        <span class="badge bg-warning text-dark px-3 py-2 mb-3 fw-bold">
-            Catálogo Editorial Multicanal
+<section class="hero-banner mb-4 text-white">
+    <div class="hero-copy">
+        <span class="hero-kicker">
+            Editorial universitaria
         </span>
-        <h1 class="display-5 fw-bold">Fondos Bibliográficos & Ediciones Académicas</h1>
-        <p class="col-md-9 fs-5 text-light opacity-90">
+        <h1 class="display-5 fw-bold">Fondos bibliográficos <em>y ediciones académicas</em></h1>
+        <p class="hero-intro">
             Publicaciones universitarias, técnicas y literarias. 
             Contamos con precios especiales por volumen para colegios y universidades, 
             e impresiones bajo demanda gestionadas por asesores comerciales.
@@ -18,20 +18,23 @@
             </a>
             <?php if (!currentUser()): ?>
                 <a href="index.php?c=auth&a=register" class="btn btn-outline-light btn-lg px-4">
-                    Crear Cuenta de Cliente
+                    Crear cuenta
                 </a>
             <?php endif; ?>
         </div>
     </div>
-</div>
+    <div class="hero-art" aria-hidden="true">
+        <div class="print-plate"><div class="print-orbit"></div><div class="print-pages"></div><span>EM</span></div>
+    </div>
+</section>
 
-<!-- Banner Informativo de Descuentos -->
-<div class="card border-0 shadow-sm mb-5 bg-white">
+<!-- Descuentos por volumen -->
+<div class="volume-strip card mb-5">
     <div class="card-body p-4">
         <div class="row align-items-center">
             <div class="col-md-3 text-center border-end-md">
-                <h5 class="fw-bold text-dark mt-2">Escalas de Descuento</h5>
-                <span class="badge bg-success-subtle text-success">Automatizadas en el Modelo</span>
+                <h5 class="fw-bold text-dark mt-2">Descuentos por volumen</h5>
+                <span class="badge bg-success-subtle text-success">Por cantidad de ejemplares</span>
             </div>
             <div class="col-md-9">
                 <div class="row g-3 text-center">
@@ -65,9 +68,9 @@
     </div>
 </div>
 
-<!-- Publicaciones Destacadas (Sin icono de estrella) -->
+<!-- Publicaciones destacadas (Sin icono de estrella) -->
 <div class="d-flex justify-content-between align-items-center mb-3">
-    <h3 class="fw-bold text-dark mb-0">Publicaciones Destacadas</h3>
+    <h3 class="fw-bold text-dark mb-0">Publicaciones destacadas</h3>
     <a href="index.php?c=home&a=catalog" class="text-umes fw-semibold text-decoration-none">Ver todas &rarr;</a>
 </div>
 
@@ -78,7 +81,7 @@
                 <div class="position-relative p-3 text-center bg-transparent">
                     <span class="position-absolute top-0 end-0 m-2 badge bg-secondary"><?= sanitize($book['formato']) ?></span>
                     <div class="book-cover-placeholder d-flex align-items-center justify-content-center mx-auto shadow-sm">
-                        <span class="text-muted small">Libro</span>
+                        <span aria-hidden="true"><?= sanitize($book['titulo']) ?></span>
                     </div>
                 </div>
                 <div class="card-body d-flex flex-column">
@@ -97,9 +100,9 @@
     <?php endforeach; ?>
 </div>
 
-<!-- Novedades del Mes (Sin icono de rayo) -->
+<!-- Novedades del mes (Sin icono de rayo) -->
 <div class="d-flex justify-content-between align-items-center mb-3">
-    <h3 class="fw-bold text-dark mb-0">Novedades del Mes</h3>
+    <h3 class="fw-bold text-dark mb-0">Novedades del mes</h3>
     <a href="index.php?c=home&a=catalog" class="text-umes fw-semibold text-decoration-none">Ver catálogo &rarr;</a>
 </div>
 
@@ -110,7 +113,7 @@
                 <div class="position-relative p-3 text-center bg-transparent">
                     <span class="position-absolute top-0 end-0 m-2 badge bg-secondary"><?= sanitize($book['formato']) ?></span>
                     <div class="book-cover-placeholder d-flex align-items-center justify-content-center mx-auto shadow-sm">
-                        <span class="text-muted small">Libro</span>
+                        <span aria-hidden="true"><?= sanitize($book['titulo']) ?></span>
                     </div>
                 </div>
                 <div class="card-body d-flex flex-column">

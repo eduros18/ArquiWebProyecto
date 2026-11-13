@@ -2,7 +2,7 @@
 
 <div class="d-flex justify-content-between align-items-center mb-4">
     <div>
-        <h3 class="fw-bold text-dark mb-0">Monitoreo de Órdenes Procesadas (RF-05.2)</h3>
+        <h3 class="fw-bold text-dark mb-0">Seguimiento de pedidos</h3>
         <p class="text-muted small mb-0">Control y cambio de estado de pedidos para el equipo comercial y administrativo</p>
     </div>
     <div class="btn-group">

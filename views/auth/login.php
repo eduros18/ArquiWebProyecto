@@ -1,6 +1,6 @@
 <?php require_once __DIR__ . '/../layout/header.php'; ?>
 
-<div class="row justify-content-center py-4">
+<div class="auth-page row justify-content-center py-4">
     <div class="col-md-6 col-lg-5">
         <div class="card border-0 shadow-sm">
             <div class="card-body p-4 p-md-5">
@@ -11,12 +11,12 @@
 
                 <form action="index.php?c=auth&a=processLogin" method="POST">
                     <div class="mb-3">
-                        <label class="form-label small fw-semibold">Correo Electrónico</label>
+                        <label for="loginEmail" class="form-label small fw-semibold">Correo Electrónico</label>
                         <input type="email" id="loginEmail" name="email" class="form-control" required placeholder="correo@ejemplo.com">
                     </div>
 
                     <div class="mb-4">
-                        <label class="form-label small fw-semibold">Contraseña</label>
+                        <label for="loginPass" class="form-label small fw-semibold">Contraseña</label>
                         <input type="password" id="loginPass" name="password" class="form-control" required placeholder="••••••••">
                     </div>
 
