@@ -92,9 +92,7 @@ CREATE TABLE IF NOT EXISTS cotizaciones (
     FOREIGN KEY (asesor_id) REFERENCES usuarios(id)
 );
 
--- ============================================================
 -- DATOS SEMILLA (DML)
--- ============================================================
 
 -- 1. Roles (Los 5 roles estrictos de la guía)
 INSERT INTO roles (id, nombre, descripcion) VALUES
