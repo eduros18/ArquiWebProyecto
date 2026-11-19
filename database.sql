@@ -1,6 +1,12 @@
 CREATE DATABASE IF NOT EXISTS editorial_mvc CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 USE editorial_mvc;
 
+-- ============================================================
+-- BASE DE DATOS: editorial_mvc
+-- PLATAFORMA EDITORIAL MULTICANAL MVC
+-- UNIVERSIDAD MESOAMERICANA (UMES) - ARQUITECTURA DE SISTEMAS
+-- ============================================================
+
 CREATE TABLE IF NOT EXISTS roles (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nombre VARCHAR(50) NOT NULL UNIQUE,
@@ -92,7 +98,9 @@ CREATE TABLE IF NOT EXISTS cotizaciones (
     FOREIGN KEY (asesor_id) REFERENCES usuarios(id)
 );
 
+-- ============================================================
 -- DATOS SEMILLA (DML)
+-- ============================================================
 
 -- 1. Roles (Los 5 roles estrictos de la guía)
 INSERT INTO roles (id, nombre, descripcion) VALUES

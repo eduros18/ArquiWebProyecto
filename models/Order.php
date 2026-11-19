@@ -72,6 +72,7 @@ class Order {
             'descuento_total' => $descuentoTotal,
             'subtotal_neto' => $subtotalNeto,
             'impuestos' => $impuestos,
+            'tasa_impuesto' => '12% IVA',
             'total_final' => $totalFinal,
             'items' => $items
         ];
