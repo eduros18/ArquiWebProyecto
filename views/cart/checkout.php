@@ -4,7 +4,7 @@
     <div class="col-lg-8">
         <div class="card border-0 shadow-sm mb-4">
             <div class="card-header bg-white py-3 border-bottom">
-                <h4 class="fw-bold mb-0 text-dark"><i class="bi bi-shield-check text-success"></i> Confirmación y Cierre de Orden (RF-03.3)</h4>
+                <h4 class="fw-bold mb-0 text-dark"><i class="bi bi-shield-check text-success"></i> Confirmar pedido</h4>
             </div>
             <div class="card-body p-4">
                 <div class="alert alert-info py-2" role="alert">

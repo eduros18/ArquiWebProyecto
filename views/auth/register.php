@@ -1,6 +1,6 @@
 <?php require_once __DIR__ . '/../layout/header.php'; ?>
 
-<div class="row justify-content-center py-4">
+<div class="auth-page row justify-content-center py-4">
     <div class="col-md-7 col-lg-6">
         <div class="card border-0 shadow-sm">
             <div class="card-body p-4 p-md-5">

@@ -2,7 +2,7 @@
 
 <div class="d-flex justify-content-between align-items-center mb-4">
     <div>
-        <h3 class="fw-bold text-dark mb-0">Bandeja de Cotizaciones - Asesor Comercial (RF-04.3 y RF-05.3)</h3>
+        <h3 class="fw-bold text-dark mb-0">Bandeja de cotizaciones</h3>
         <p class="text-muted small mb-0">Revisa, presupuesta y responde a las solicitudes de tirajes de clientes institucionales</p>
     </div>
     <div class="btn-group">

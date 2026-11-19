@@ -8,7 +8,7 @@ $cartCount = isset($_SESSION['cart']) ? array_sum(array_column($_SESSION['cart']
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?= APP_NAME ?> - Plataforma MVC</title>
+    <title><?= APP_NAME ?> · Librería universitaria</title>
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap Icons -->
@@ -19,17 +19,17 @@ $cartCount = isset($_SESSION['cart']) ? array_sum(array_column($_SESSION['cart']
 <body class="d-flex flex-column min-vh-100 bg-light">
 
 <!-- Navbar Principal -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-umes sticky-top shadow-sm">
+<nav class="navbar navbar-expand-xl navbar-dark bg-umes sticky-top shadow-sm">
     <div class="container">
         <a class="navbar-brand d-flex align-items-center gap-2 fw-bold" href="index.php?c=home&a=index">
-            <i class="bi bi-book-half fs-3"></i>
+            <i class="brand-mark bi bi-book-half" aria-hidden="true"></i>
             <div>
                 <span class="d-block lh-1">EDITORIAL</span>
                 <span class="fs-6 fw-light text-warning">MESOAMERICANA</span>
             </div>
         </a>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Abrir navegación">
             <span class="navbar-toggler-icon"></span>
         </button>
 
@@ -73,7 +73,7 @@ $cartCount = isset($_SESSION['cart']) ? array_sum(array_column($_SESSION['cart']
                 <?php if ($user && $user['rol_nombre'] === 'admin'): ?>
                     <li class="nav-item">
                         <a class="nav-link text-danger fw-semibold" href="index.php?c=book&a=index">
-                            <i class="bi bi-gear-fill"></i> CRUD Catálogo
+                            <i class="bi bi-gear-fill"></i> Gestionar catálogo
                         </a>
                     </li>
                 <?php endif; ?>
@@ -145,7 +145,7 @@ $cartCount = isset($_SESSION['cart']) ? array_sum(array_column($_SESSION['cart']
                 ];
                 echo $msgs[$_GET['msg']] ?? 'Operación realizada con éxito.';
             ?>
-            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+            <button type="button" aria-label="Cerrar aviso" class="btn-close" data-bs-dismiss="alert"></button>
         </div>
     <?php endif; ?>
 
@@ -165,7 +165,7 @@ $cartCount = isset($_SESSION['cart']) ? array_sum(array_column($_SESSION['cart']
                 ];
                 echo $errors[$_GET['error']] ?? 'Ocurrió un error al procesar la solicitud.';
             ?>
-            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+            <button type="button" aria-label="Cerrar aviso" class="btn-close" data-bs-dismiss="alert"></button>
         </div>
     <?php endif; ?>
 </div>

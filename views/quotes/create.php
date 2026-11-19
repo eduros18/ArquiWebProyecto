@@ -4,7 +4,7 @@
     <div class="col-lg-8">
         <div class="card border-0 shadow-sm">
             <div class="card-header bg-umes text-white py-3">
-                <h4 class="fw-bold mb-0"><i class="bi bi-file-earmark-spreadsheet"></i> Solicitud de Pedido Especial / Cotización (RF-04.1)</h4>
+                <h4 class="fw-bold mb-0"><i class="bi bi-file-earmark-spreadsheet"></i> Solicitar una cotización</h4>
                 <p class="small text-white-50 mb-0">Módulo exclusivo para Clientes Institucionales (colegios, universidades y empresas)</p>
             </div>
             <div class="card-body p-4 p-md-5">
